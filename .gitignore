@@ -1,0 +1,115 @@
+# =========================
+# OS / Editores
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.vscode/*
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.manifest
+*.spec
+.venv/
+venv/
+env/
+ENV/
+.nox/
+.tox/
+.mypy_cache/
+.pytest_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+# Resultados/datos generados por experimentos (ajusta a tu estructura)
+results/
+data/
+datasets/
+
+# =========================
+# C / C++ / Compilados
+# =========================
+# Objetos y binarios
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.pdb
+*.idb
+
+# Cachés/índices de compilación
+*.pch
+*.gch
+*.d
+*.dep
+
+# Clang/clangd/ccls
+.clangd/
+.ccls-cache/
+compile_commands.json
+
+# =========================
+# CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+_install/
+build/
+build-*/
+cmake-build-*/
+
+# =========================
+# Visual Studio (si aplica)
+# =========================
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj
+*.sln
+
+# =========================
+# Gestores C++ (si aplica)
+# =========================
+.conan/
+vcpkg_installed/
+
+# =========================
+# Extras
+# =========================
+
+uhr.exe
+uhr
+uhr.cpp
+binary_heap.cpp
+binomial_heap.cpp
