@@ -113,3 +113,6 @@ uhr
 uhr.cpp
 binary_heap.cpp
 binomial_heap.cpp
+rk.cpp
+segment_tree.cpp
+sparse_table.cpp

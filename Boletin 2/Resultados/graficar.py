@@ -11,22 +11,26 @@ UNIT = "ns"   # 'ns' (nanosegundos), 'us', 'ms', 's'
 
 # Archivos esperados (6 CSV del experimento de heaps)
 FILES = [
-    "resultadosInsertBinaryHeap.csv",
-    "resultadosInsertBinomialHeap.csv",
-    "resultadosInsertFibonacciHeap.csv",
-    "resultadosextractMinBinaryHeap.csv",
-    "resultadosextractMinBinomialHeap.csv",
-    "resultadosextractMinFibonacciHeap.csv",
+    "resultadosInsertBinario.csv",
+    "resultadosInsertBinomial.csv",
+    "resultadosInsertFibonacci.csv",
+    "resultadosExtractMinBinario.csv",
+    "resultadosExtractMinBinomial.csv",
+    "resultadosExtractFibonacci.csv",
+    "resultadosExtractBinarioMultiple.csv",
+    "resultadosExtractFibonacciMultiple.csv",
 ]
 
 # Títulos por archivo
 TITLE = {
-    "resultadosInsertBinaryHeap.csv":       ("Insert — Binary Heap",       "Tamaño (n)"),
-    "resultadosInsertBinomialHeap.csv":     ("Insert — Binomial Heap",     "Tamaño (n)"),
-    "resultadosInsertFibonacciHeap.csv":    ("Insert — Fibonacci Heap",    "Tamaño (n)"),
-    "resultadosextractMinBinaryHeap.csv":   ("extractMin — Binary Heap",   "Tamaño (n)"),
-    "resultadosextractMinBinomialHeap.csv": ("extractMin — Binomial Heap", "Tamaño (n)"),
-    "resultadosextractMinFibonacciHeap.csv": ("extractMin — Fibonacci Heap", "Tamaño (n)"),
+    "resultadosInsertBinario.csv":       ("Insert — Binary Heap",       "Tamaño (n)"),
+    "resultadosInsertBinomial.csv":     ("Insert — Binomial Heap",     "Tamaño (n)"),
+    "resultadosInsertFibonacci.csv":    ("Insert — Fibonacci Heap",    "Tamaño (n)"),
+    "resultadosExtractMinBinario.csv":   ("extractMin — Binary Heap",   "Tamaño (n)"),
+    "resultadosExtractMinBinomial.csv": ("extractMin — Binomial Heap", "Tamaño (n)"),
+    "resultadosExtractFibonacci.csv": ("extractMin — Fibonacci Heap", "Tamaño (n)"),
+    "resultadosExtractBinarioMultiple.csv":   ("extractMin (m=n/2) — Binary Heap",   "Tamaño (n)"),
+    "resultadosExtractFibonacciMultiple.csv": ("extractMin (m=n/2) — Fibonacci Heap", "Tamaño (n)"),
 }
 
 # Conversión de unidades (ns -> deseada)
@@ -87,7 +91,7 @@ def plot_one(csv_name):
 
     # Gráfico
     plt.figure(figsize=(8, 5))
-    plt.plot(df[xcol].values, df[ycol].values, linewidth=1.5, marker="o", label="t_mean (ns→{})".format(UNIT))
+    plt.plot(df[xcol].values, df[ycol].values, linewidth=1.5, label="t_mean (ns→{})".format(UNIT))
 
     # Línea horizontal del promedio
     plt.axhline(y=y_mean, linestyle="--", linewidth=1.2,
